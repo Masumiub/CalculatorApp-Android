@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity=""
+    android:orientation="vertical">
+
+
+
+    <EditText
+        android:id="@+id/firstNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:inputType="numberDecimal"
+        android:hint="First Number"
+        />
+
+    <EditText
+        android:id="@+id/secondNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:inputType="numberDecimal"
+        android:hint="Second Number"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:backgroundTint="#FFA500"
+            android:onClick="btnsum"
+            android:layout_margin="12dp"
+            />
+
+        <Button
+            android:id="@+id/buttonSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub"
+            android:backgroundTint="#7ACD2E"
+            android:onClick="btnsub"
+            android:layout_margin="12dp"
+            />
+
+        <Button
+            android:id="@+id/buttonAns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ans"
+            android:backgroundTint="#13D1D1"
+            android:onClick="btnans"
+            android:layout_margin="12dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonMulti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multi"
+            android:backgroundTint="#FF6C8B"
+            android:onClick="btnmulti"
+            android:layout_margin="12dp"
+            />
+
+        <Button
+            android:id="@+id/buttonDivide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Divide"
+            android:backgroundTint="#009CFF"
+            android:onClick="btndiv"
+            android:layout_margin="12dp"
+            />
+        <Button
+            android:id="@+id/buttonAC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AC"
+            android:onClick="btnAC"
+            android:layout_margin="12dp"
+            />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textStyle="bold"
+        android:textSize="42dp"
+        />
+    <TextView
+        android:id="@+id/myid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Made by 1920582"
+
+        />
+</LinearLayout>
